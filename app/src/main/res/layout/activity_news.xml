@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".e03.layouts.NewsActivity"
+    android:background="@color/w_background_200"
+    >
+
+    <ImageView
+        android:id="@+id/appIcon"
+        android:layout_width="wrap_content"
+        android:layout_height="120dp"
+        app:srcCompat="@drawable/weather"
+        android:layout_centerHorizontal="true"
+        android:background="@color/w_background"
+        />
+    <View
+        android:id="@+id/divider"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="?android:attr/listDivider"
+        android:layout_below="@id/appIcon"
+
+        />
+
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Titulo"
+        tools:layout_editor_absoluteX="65dp"
+        tools:layout_editor_absoluteY="71dp"
+
+        android:layout_below="@id/appIcon"
+
+        android:layout_centerHorizontal="true"
+        android:textSize="50dp"
+
+        android:textColor="@color/w_black"
+
+        />
+
+    <TextView
+        android:id="@+id/subtitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Subtitulo"
+        tools:layout_editor_absoluteX="107dp"
+        tools:layout_editor_absoluteY="106dp"
+        android:layout_below="@id/title"
+
+        android:layout_centerHorizontal="true"
+        android:textSize="15dp"
+
+        android:textColor="@color/w_black"
+
+        />
+
+    <TextView
+        android:id="@+id/authorName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Erick Etiene"
+        tools:layout_editor_absoluteX="108dp"
+        tools:layout_editor_absoluteY="145dp"
+        android:layout_below="@id/subtitle"
+        android:layout_toRightOf="@id/subtitle"
+
+        />
+
+    <TextView
+        android:id="@+id/newsBody"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Caros amigos, o Cristianismo entendido como degradação, na perspectiva universal
+        do polêmico anticristo nietzscheano, não faz retroceder aos princípios das condições epistemológicas
+        e cognitivas exigidas. Mas, à primeira vista, quiçá pareça que a complexidade dos estudos efetuados tem
+        como componentes elementos indiscerníveis da fundamentação metafísica das representações. Assim mesmo, a estrutura
+        atual da ideação semântica possibilita uma interpretação objetiva do sistema de conhecimento geral."
+        tools:layout_editor_absoluteX="97dp"
+        tools:layout_editor_absoluteY="216dp"
+        android:layout_below="@id/authorName"
+
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+
+        android:textColor="@color/w_black"
+
+        />
+
+    <TextView
+        android:id="@+id/newsTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="00:12"
+        tools:layout_editor_absoluteX="204dp"
+        tools:layout_editor_absoluteY="265dp"
+
+        android:layout_below="@id/newsBody"
+        android:layout_alignParentRight="true"
+        />
+
+    <ImageView
+        android:id="@+id/authorImg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:layout_editor_absoluteX="57dp"
+        tools:layout_editor_absoluteY="296dp"
+        tools:srcCompat="@tools:sample/avatars"
+        android:layout_below="@id/newsTime"
+        android:layout_marginLeft="10dp"
+        />
+
+    <TextView
+        android:id="@+id/cttAuthorName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nome Autor"
+        tools:layout_editor_absoluteX="235dp"
+        tools:layout_editor_absoluteY="358dp"
+
+        android:layout_toRightOf="@id/authorImg"
+        android:layout_below="@id/newsTime"
+
+        android:layout_marginLeft="10dp"
+
+        android:textColor="@color/w_black"
+        />
+
+    <TextView
+        android:id="@+id/cttauthorEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Email Autor"
+        tools:layout_editor_absoluteX="232dp"
+        tools:layout_editor_absoluteY="382dp"
+
+        android:layout_below="@id/cttAuthorName"
+        android:layout_toRightOf="@id/authorImg"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+
+
+        android:textColor="@color/w_black"
+        />
+
+
+
+
+</RelativeLayout>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".e03.layouts.MainActivityE03">
+
+    <Button
+        android:id="@+id/splash"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="splash"
+        tools:layout_editor_absoluteX="124dp"
+        tools:layout_editor_absoluteY="452dp"
+        android:layout_centerInParent="true"
+        />
+
+
+    <Button
+        android:layout_below="@id/splash"
+        android:id="@+id/noticia"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="noticia"
+        tools:layout_editor_absoluteX="117dp"
+        tools:layout_editor_absoluteY="205dp"
+        android:layout_centerInParent="true"
+        />
+
+    <Button
+        android:id="@+id/previsao"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="previsao"
+        tools:layout_editor_absoluteX="113dp"
+        tools:layout_editor_absoluteY="334dp"
+        android:layout_below="@id/noticia"
+        android:layout_centerInParent="true"
+        />
+
+    <Button
+        android:id="@+id/formulario"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="formulario"
+        tools:layout_editor_absoluteX="124dp"
+        tools:layout_editor_absoluteY="452dp"
+        android:layout_below="@id/previsao"
+        android:layout_centerInParent="true"
+        />
+
+
+</RelativeLayout>

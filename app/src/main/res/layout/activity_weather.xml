@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".e03.layouts.WeatherActivity"
+    android:stretchColumns="4"
+
+    android:background="@color/w_background_200"
+    >
+
+    <ImageView
+        android:id="@+id/appIcon"
+        android:layout_width="wrap_content"
+        android:layout_height="120dp"
+        app:srcCompat="@drawable/weather"
+        android:layout_centerHorizontal="true"
+        android:background="@color/w_background"
+        />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Belo Horizonte | 36º"
+        android:textSize="44dp"
+        />
+
+    <TableRow
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="10dp"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Data"
+            android:textSize="26dp"
+            android:layout_weight="1"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tempo"
+            android:textSize="26dp"
+            android:layout_weight="1"
+            />
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Min"
+            android:textSize="26dp"
+            android:layout_weight="1"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Max"
+            android:textSize="26dp"
+            android:layout_weight="1"
+            />
+
+
+    </TableRow>
+
+
+
+
+
+    <TableRow>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hoje"
+            android:textSize="26dp"
+            android:layout_weight="1"
+            />
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginTop="10dp"
+            app:srcCompat="@drawable/weather"
+            android:layout_weight="1"
+            android:layout_marginRight="40dp"
+
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="24º"
+            android:textSize="26dp"
+            android:layout_weight="1"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="29º"
+            android:textSize="26dp"
+            android:layout_weight="1"
+            />
+
+
+    </TableRow>
+
+    <TableRow>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Terça"
+            android:textSize="26dp"
+            android:layout_weight="1"
+            />
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginTop="10dp"
+            app:srcCompat="@drawable/weather"
+            android:layout_weight="1"
+
+
+            android:layout_marginRight="40dp"
+
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="25º"
+            android:textSize="26dp"
+            android:layout_weight="1"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="27º"
+            android:textSize="26dp"
+            android:layout_weight="1"
+            />
+
+
+    </TableRow>
+
+    <TableRow>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Quarta"
+            android:textSize="26dp"
+            android:layout_weight="1"
+            />
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginTop="10dp"
+            app:srcCompat="@drawable/weather"
+            android:layout_weight="1"
+
+
+            android:layout_marginRight="40dp"
+
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="25º"
+            android:textSize="26dp"
+            android:layout_weight="1"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="29º"
+            android:textSize="26dp"
+            android:layout_weight="1"
+            />
+
+
+    </TableRow>
+
+</TableLayout>
