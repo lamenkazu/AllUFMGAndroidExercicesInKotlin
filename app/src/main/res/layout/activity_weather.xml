@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".e03.layouts.WeatherActivity"
+    tools:context=".e03.layouts_and_widgets.WeatherActivity"
     android:stretchColumns="4"
 
     android:background="@color/w_background_200"

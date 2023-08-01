@@ -13,19 +13,28 @@
         android:theme="@style/Theme.AllUFMGAndroidExercicesInKotlin"
         tools:targetApi="31">
         <activity
+            android:name=".e03.layout_and_adapter.MainActivityE03Adapter"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
             android:name=".e02.E02LoginActivity"
             android:exported="false" />
         <activity
-            android:name=".e03.layouts.SplashActivity"
+            android:name=".e03.layouts_and_widgets.SplashActivity"
             android:exported="false" />
         <activity
-            android:name=".e03.layouts.WeatherActivity"
+            android:name=".e03.layouts_and_widgets.WeatherActivity"
             android:exported="false" />
         <activity
-            android:name=".e03.layouts.NewsActivity"
+            android:name=".e03.layouts_and_widgets.NewsActivity"
             android:exported="false" />
         <activity
-            android:name=".e03.layouts.FormActivity"
+            android:name=".e03.layouts_and_widgets.FormActivity"
             android:exported="false" />
         <activity
             android:name=".e02.E02Activity"
@@ -34,7 +43,7 @@
             android:name=".e02.DebugActivity"
             android:exported="false" />
         <activity
-            android:name=".e03.layouts.MainActivityE03"
+            android:name=".e03.layouts_and_widgets.MainActivityE03"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

@@ -1,10 +1,8 @@
-package com.daedrii.allufmgandroidexercicesinkotlin.e03.layouts
+package com.daedrii.allufmgandroidexercicesinkotlin.e03.layouts_and_widgets
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import com.daedrii.allufmgandroidexercicesinkotlin.R
-import com.daedrii.allufmgandroidexercicesinkotlin.databinding.ActivityE02ActivityBinding
 import com.daedrii.allufmgandroidexercicesinkotlin.databinding.ActivityMainE03Binding
 
 class MainActivityE03 : AppCompatActivity() {

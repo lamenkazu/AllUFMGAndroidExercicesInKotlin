@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="10dp">
+
+    <ImageView
+        android:id="@+id/img_place_photo"
+        style="@style/place_photo"
+
+        android:src="@drawable/ic_launcher_background"/>
+
+
+    <TextView
+        android:id="@+id/txt_place_name"
+        android:text="Um lugar qualquer"
+
+        style="@style/place_name"
+
+        android:layout_toRightOf="@id/img_place_photo"
+
+        />
+
+    <TextView
+        android:id="@+id/txt_place_description"
+        android:text="Este é um lugar qualquer que serve alguma coisa"
+
+        style="@style/place_description"
+
+        android:layout_alignLeft="@id/txt_place_name"
+        android:layout_below="@id/txt_place_name"
+
+        />
+
+    <RatingBar
+        android:id="@+id/rating_place_vote"
+
+        android:layout_alignBottom="@id/img_place_photo"
+        android:layout_alignLeft="@id/txt_place_name"
+
+        android:layout_marginTop="60dp"
+
+        style="@style/rating_bar"
+
+        />
+
+    <TextView
+        android:id="@+id/txt_place_distance"
+        android:text="0.4 KM"
+        style="@style/place_distance"
+        />
+</RelativeLayout>

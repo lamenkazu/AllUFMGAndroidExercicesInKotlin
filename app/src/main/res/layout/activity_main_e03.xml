@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".e03.layouts.MainActivityE03">
+    tools:context=".e03.layouts_and_widgets.MainActivityE03">
 
     <Button
         android:id="@+id/splash"

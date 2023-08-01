@@ -1,10 +1,9 @@
-package com.daedrii.allufmgandroidexercicesinkotlin.e03.layouts
+package com.daedrii.allufmgandroidexercicesinkotlin.e03.layouts_and_widgets
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Toast
 import androidx.appcompat.app.AlertDialog
-import com.daedrii.allufmgandroidexercicesinkotlin.R
 import com.daedrii.allufmgandroidexercicesinkotlin.databinding.ActivityFormBinding
 
 class FormActivity : AppCompatActivity() {

@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".e03.layouts.FormActivity"
+    tools:context=".e03.layouts_and_widgets.FormActivity"
     android:paddingStart="100dp"
     android:paddingTop="100dp">
 
