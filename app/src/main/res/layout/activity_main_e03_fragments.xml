@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".e03.fragments.MainActivityE03Fragments">
+
+    <androidx.fragment.app.FragmentContainerView
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        class="com.daedrii.allufmgandroidexercicesinkotlin.e03.fragments.PlacesListFragment"
+        android:id="@+id/frag_places_list"/>
+
+    <!--TODO[3] Incluir o componente de fragment que está faltando aqui! -->
+    <androidx.fragment.app.FragmentContainerView
+
+        android:id="@+id/frag_place_details"
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:name="com.daedrii.allufmgandroidexercicesinkotlin.e03.fragments.PlaceDetails"
+
+        tools:layout = "@layout/fragment_place_details"
+
+        />
+</LinearLayout>

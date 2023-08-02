@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="40dp">
+
+    <ImageView
+
+        android:id="@+id/imgPlacePic"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_launcher_background"
+        android:layout_centerVertical="true"/>
+
+    <TextView
+        android:id="@+id/lblTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/imgPlacePic"
+
+        android:textSize="20dp"
+
+        android:layout_alignTop="@id/imgPlacePic"
+
+        android:layout_centerInParent="true"
+
+        android:text="Um Lugar Qualquer"
+        />
+
+    <TextView
+        android:id="@+id/lblComent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Este é um lugar qualquer que serve de exemplo"
+        android:layout_below="@id/lblTitle"
+
+        android:layout_toRightOf="@id/imgPlacePic"
+        android:layout_centerVertical="true"
+
+        />
+
+    <RatingBar
+        android:id="@+id/ratingBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        style="?android:attr/ratingBarStyleSmall"
+
+
+        android:layout_toRightOf="@id/imgPlacePic"
+
+        android:layout_alignBottom="@id/imgPlacePic"
+
+
+        android:isIndicator="true"
+        android:numStars="5"
+        android:rating="3"
+        android:stepSize="0.5"
+        />
+
+    <TextView
+        android:id="@+id/lblDistance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0.0 Km"
+
+        android:layout_alignParentRight="true"
+        android:layout_alignBottom="@id/imgPlacePic"
+
+        />
+
+
+
+</RelativeLayout>
