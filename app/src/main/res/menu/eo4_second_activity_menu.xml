@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/actionRefresh"
+        android:title="Atualizar"
+        app:showAsAction="always"
+        android:icon="@drawable/baseline_refresh_24"
+        />
+
+    <item
+        android:id="@+id/actionFind"
+
+        android:title="Buscar"
+        app:showAsAction="always"
+
+        app:actionViewClass="android.widget.SearchView"
+
+        />
+
+    <item
+        android:id="@+id/actionShare"
+        android:title="Compartilhar"
+        app:showAsAction="ifRoom"
+        app:actionProviderClass="androidx.appcompat.widget.ShareActionProvider"
+        />
+
+    <item
+        android:id="@+id/actionConfig"
+        android:title="Configurações"
+        app:showAsAction="never"
+        />
+
+    <item
+        android:id="@+id/actionAbout"
+        android:title="About"
+        app:showAsAction="never"
+
+        />
+
+    <item
+        android:id="@+id/actionLeave"
+        android:title="Sair"
+        app:showAsAction="never"
+        />
+
+</menu>

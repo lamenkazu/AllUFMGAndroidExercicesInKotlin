@@ -2,6 +2,11 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
 
+    <uses-feature
+        android:name="android.hardware.telephony"
+        android:required="false" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+
     <application
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
@@ -12,11 +17,29 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AllUFMGAndroidExercicesInKotlin"
         tools:targetApi="31">
+
+        <activity
+            android:name=".e04.menu_and_navigation.ThirdActivity"
+            android:exported="false"
+            android:parentActivityName=".e04.menu_and_navigation.MainActivityE04ActionBar"
+            android:theme="@style/AppThemeWithActionBar"
+            />
+        <activity
+            android:name=".e04.menu_and_navigation.SecondActivity"
+            android:exported="false"
+            android:parentActivityName=".e04.menu_and_navigation.MainActivityE04ActionBar"
+            android:theme="@style/AppThemeWithActionBar"
+        />
+
+
+        <activity
+            android:name=".e03.fragments.MainActivityE03Fragments"
+            android:exported="false" />
         <activity
             android:name=".e03.layout_and_adapter.MainActivityE03Adapter"
             android:exported="false" />
         <activity
-            android:name=".e03.fragments.MainActivityE03Fragments"
+            android:name=".e04.menu_and_navigation.MainActivityE04ActionBar"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

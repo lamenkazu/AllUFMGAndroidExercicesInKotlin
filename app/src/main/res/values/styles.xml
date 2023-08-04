@@ -39,4 +39,11 @@
         <item name="android:layout_alignParentRight"> true</item>
     </style>
 
+
+    <style name="AppThemeWithActionBar" parent="Theme.Material3.DayNight">
+        <!-- Habilita a ActionBar -->
+        <item name="android:windowActionBar">true</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
 </resources>
