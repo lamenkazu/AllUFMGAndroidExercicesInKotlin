@@ -20,9 +20,11 @@
         android:theme="@style/Theme.AllUFMGAndroidExercicesInKotlin"
         tools:targetApi="31">
         <activity
+            android:name=".e05.intents.IntentsCustomizadasActivity"
+            android:exported="false" />
+        <activity
             android:name=".e05.intents.IntentsNativasActivity"
-            android:exported="false" >
-        </activity>
+            android:exported="false"></activity>
         <activity
             android:name=".e04.background_tasks.MainActivityE04BackgroundTasks"
             android:exported="false" />
@@ -46,7 +48,7 @@
             android:name=".e03.layout_and_adapter.MainActivityE03Adapter"
             android:exported="false" />
         <activity
-            android:name=".e05.intents.IntentsCustomizadasActivity"
+            android:name=".e05.broadcast_receivers.BroadcastReceiversActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
