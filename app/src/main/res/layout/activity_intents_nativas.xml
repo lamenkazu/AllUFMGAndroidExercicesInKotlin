@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".e05.intents.IntentsNativasActivity">
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+
+        android:id="@+id/imgProfile"
+
+        android:layout_centerHorizontal="true"
+
+        />
+
+
+    <ImageButton
+        android:id="@+id/btnEdit"
+        android:layout_width="18dp"
+        android:layout_height="18dp"
+
+        android:layout_alignBottom="@id/imgProfile"
+        android:layout_toRightOf="@id/imgProfile"
+
+        android:src="@drawable/baseline_mode_edit_outline_24"
+        android:background="?selectableItemBackgroundBorderless"
+        android:scaleType="fitXY"
+
+        />
+
+    <TextView
+        android:id="@+id/profileName"
+        android:layout_width="wrap_content"
+
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imgProfile"
+
+        android:layout_centerHorizontal="true"
+
+        android:text="Erick Etiene" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:text="333.erick@gmail.com"
+        android:id="@+id/profileMail"
+
+
+        android:layout_below="@id/profileName"
+
+        android:layout_centerHorizontal="true"
+
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:text="31992855944"
+        android:id="@+id/profileTel"
+
+        android:layout_below="@id/profileMail"
+        android:layout_centerHorizontal="true"
+
+        android:layout_marginLeft="1dp"
+
+        />
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:text=", 23"
+        android:id="@+id/profileAge"
+
+        android:layout_toRightOf="@id/profileName"
+        android:layout_below="@id/imgProfile"
+
+        />
+
+</RelativeLayout>

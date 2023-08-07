@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".e05.intents.IntentsCustomizadasActivity">
+
+    <TextView
+        android:id="@+id/lblScan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+
+        android:text="Escaneie um código de Barras: "
+        android:textSize="25dp"
+        />
+
+    <Button
+        android:id="@+id/btn_scan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_below="@id/lblScan"
+        android:layout_centerHorizontal="true"
+        android:text="Scan"
+        />
+
+    <TextView
+        android:id="@+id/lbl_code"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+
+        android:layout_below="@id/btn_scan"
+        android:layout_centerHorizontal="true"
+
+        android:hint="Resultado"
+        />
+
+</RelativeLayout>
