@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".e06.data_percistence.database.DatabaseActivity">
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:text="Inserir Novo Produto"
+        android:textSize="31sp"
+
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/layoutProductName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_below="@id/title"
+        android:layout_centerHorizontal="true"
+        android:hint="Nome do Produto">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/txtProductName"
+
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:textSize="21sp"
+
+            android:inputType="text"
+
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/layoutProductPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_below="@id/layoutProductName"
+        android:layout_centerHorizontal="true"
+        android:hint="Preço do Produto"
+        android:layout_marginTop="10dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/txtProductPrice"
+
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:textSize="21sp"
+
+            android:inputType="numberDecimal"
+
+
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnAddProduct"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_below="@id/layoutProductPrice"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+
+        android:text="Inserir"
+        android:textSize="21sp"
+
+        />
+
+
+    <ListView
+        android:id="@+id/product_list"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_below="@id/btnAddProduct"
+        android:layout_marginTop="10dp"
+        />
+
+</RelativeLayout>
