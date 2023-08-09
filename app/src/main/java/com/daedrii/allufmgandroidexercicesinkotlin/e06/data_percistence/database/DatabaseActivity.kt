@@ -2,8 +2,6 @@ package com.daedrii.allufmgandroidexercicesinkotlin.e06.data_percistence.databas
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.util.Log
-import com.daedrii.allufmgandroidexercicesinkotlin.R
 import com.daedrii.allufmgandroidexercicesinkotlin.databinding.ActivityDatabaseBinding
 
 class DatabaseActivity : AppCompatActivity() {
@@ -15,26 +13,23 @@ class DatabaseActivity : AppCompatActivity() {
         binding = ActivityDatabaseBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        val productDAO = ProductDAO(this)
+        val adapter = ProductAdapter(applicationContext)
 
-        productDAO.insert(
-            Product(0,"Banana", 7.99)
-        )
-        productDAO.insert(
-            Product(1, "Bala Halls", 3.0)
-        )
+        binding.productList.adapter = adapter
 
-        val productList: ArrayList<Product> = productDAO.getAll()
+        binding.btnAddProduct.setOnClickListener {
 
-        productList.forEach{
-            Log.d("Product ID", "ID: ${it.id} Name: ${it.name}, Price: R$${it.price}")
+            val productName = binding.txtProductName.text.toString()
+            val productPrice = binding.txtProductPrice.text.toString().toDouble()
+            val productSize = adapter.getProducts().size
+
+            val newProduct = Product(productSize, productName, productPrice)
+
+            adapter.insertProduct(newProduct)
         }
 
-        productDAO.deleteAll()
-
-
-        productList.forEach{
-            Log.d("Product ID", "ID: ${it.id} Name: ${it.name}, Price: R$${it.price}")
+        binding.btnDelete.setOnClickListener{
+            adapter.deleteProducts()
         }
     }
 }
